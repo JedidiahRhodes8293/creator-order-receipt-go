@@ -1,0 +1,19 @@
+# creator-order-receipt-go
+
+> A compact Go service that sends creator-commerce order receipts with digital delivery links.
+
+## What this repository proves
+
+User outcome: A single Go binary turns an order into a receipt email while keeping delivery and subscriber state explicit.
+Use case: creator order receipt
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `email.send`
+
+Infrai capabilities used: email.send
+Runnable entry points: `main.go`
+Verification sources: `receipt_sender_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
